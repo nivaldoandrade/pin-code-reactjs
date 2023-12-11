@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Pin Code Reactjs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O projeto **Pin Code ReactJS** é uma aplicação desenvolvida em ReactJS utilizando Vite.js e TypeScript. Ele oferece uma interface simples e flexível para inserir, validar e colar códigos PIN personalizáveis em aplicações web. Essa solução permite ajustar a quantidade de dígitos do PIN, facilitando sua integração em diferentes contextos.
 
-Currently, two official plugins are available:
+## Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[DEMO](https://pincode.nivaldoandrade.dev.br/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+- **Inserção de PIN Numérico:**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+    Capacidade exclusiva de inserir códigos PIN contendo apenas números, proporcionando maior segurança na autenticação.
+
+- **Validação de PIN:**
+
+    Verificação da validade dos códigos PIN inseridos, garantindo a integridade e precisão dos dados numéricos.
+    Colagem de PIN:
+
+    Facilidade para colar (copiar/colar) códigos PIN numéricos, agilizando o processo de entrada de dados.
+
+- **Configuração Flexível:**
+
+    Adaptabilidade para ajustar as configurações do projeto, mantendo a restrição de apenas números no PIN, possibilitando sua integração em diferentes contextos de aplicação web.
+
+
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/nivaldoandrade/pin-code-reactjs
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Entre no diretório do projeto
+
+```bash
+  cd pin-code-reactjs
+```
+
+Instale as dependências
+
+```bash
+  yarn
+  ou
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  yarn dev
+  ou
+  npm run dev
+```
+
