@@ -1,0 +1,29 @@
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 92px;
+  height: 92px;
+  border-radius: 8px;
+  padding: 8px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ccc;
+
+  transition: 0.2s ease-in;
+
+  font-size: 36px;
+  text-align: center;
+}
+
+input+input {
+  margin-left: 16px
+}
+
+input:focus {
+  outline: none;
+  border-color: #D73035;
+}
